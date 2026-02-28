@@ -4,3 +4,7 @@ description: A graduate student at University of Oregon interested in cybersecur
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme
+
+linkedin_url: https://www.linkedin.com/in/-kovatch/
+medium_url: https://kovatch.medium.com
+bughunters_url: https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b
