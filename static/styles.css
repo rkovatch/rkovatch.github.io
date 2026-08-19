@@ -1,0 +1,19 @@
+.grid-bg {
+    background-image:
+            linear-gradient(to right, rgba(42, 42, 43, 0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(42, 42, 43, 0.3) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+.tech-border { border: 1px solid #2a2a2b; }
+.tech-border-primary { border: 1px solid #00dbe9; }
+.card-hover:hover { border-color: #00dbe9; }
+
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #2a2a2b;
+}

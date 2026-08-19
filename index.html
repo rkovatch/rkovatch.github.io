@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Ryan Kovatch | Web App Security</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+        <script src="static/tailwind.config.js" id="tailwind-config"></script>
+        <link href="static/styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    </head>
+    <body class="bg-background text-on-background font-body-lg min-h-screen antialiased selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+        <!-- Nav Bar -->
+        <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant">
+            <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+                <a class="font-label-caps text-label-caps text-primary-fixed-dim tracking-[0.2em]" href="#hero">RYAN KOVATCH</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed transition-colors duration-200 uppercase" href="#research">Research</a>
+                    <a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed transition-colors duration-200 uppercase" href="#projects">Projects</a>
+                    <a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed transition-colors duration-200 uppercase" href="#contact">Contact</a>
+                </div>
+                <a href="assets/Ryan%20Kovatch%20Resume.pdf">
+                    <button class="bg-primary-fixed-dim text-on-primary-fixed font-label-caps text-label-caps px-4 py-2 hover:bg-primary-fixed transition-colors">
+                        RESUME.PDF
+                    </button>
+                </a>
+            </div>
+        </nav>
+
+        <main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative grid-bg">
+            <!-- Hero Section -->
+            <section class="py-12 relative min-h-[40vh] flex flex-col justify-center border-b border-outline-variant" id="hero">
+                <div class="relative z-10 max-w-container-max w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                    <div class="md:col-span-8">
+                        <div class="font-code-sm text-code-sm opacity-30 text-primary-fixed-dim mb-4 tracking-widest">[HERO_SECTION]</div>
+                        <h1 class="font-display-lg text-display-lg text-on-surface mb-4 uppercase tracking-wider">RYAN KOVATCH</h1>
+                        <p class="font-headline-md text-headline-md text-on-surface-variant mb-6">Web Application Security Specialist</p>
+                        <div class="max-w-2xl bg-surface-container-low tech-border p-4 backdrop-blur-sm">
+                            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                Hi! I'm a cybersecurity specialist with a focus on web application and API security. I recently graduated with an MS in Computer Science from the University of Oregon, where I did cryptographic protocol design and research. My accomplishments in bug bounty helped pay for my education.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 flex flex-col gap-4">
+                        <div class="bg-background backdrop-blur-sm tech-border p-3 relative group transition-colors flex items-center gap-4">
+                            <div class="text-primary-fixed-dim">
+                                <span class="material-symbols-outlined">public</span>
+                            </div>
+                            <div>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-fixed-dim font-code-sm text-code-sm">[METRIC_01]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-widest">Google VRP</h3>
+                                <p class="font-headline-md text-2xl text-primary-fixed-dim">TOP 10%</p>
+                            </div>
+                        </div>
+                        <div class="bg-background backdrop-blur-sm tech-border p-3 relative group transition-colors flex items-center gap-4">
+                            <div class="text-primary-fixed-dim">
+                                <span class="material-symbols-outlined">payments</span>
+                            </div>
+                            <div>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-fixed-dim font-code-sm text-code-sm">[METRIC_02]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-widest">Awards</h3>
+                                <p class="font-headline-md text-2xl text-primary-fixed-dim">$30K+</p>
+                            </div>
+                        </div>
+                        <div class="bg-background backdrop-blur-sm tech-border p-3 relative group transition-colors flex items-center gap-4">
+                            <div class="text-primary-fixed-dim">
+                                <span class="material-symbols-outlined">bug_report</span>
+                            </div>
+                            <div>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-fixed-dim font-code-sm text-code-sm">[METRIC_03]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase tracking-widest">Critical Vulns</h3>
+                                <p class="font-headline-md text-2xl text-primary-fixed-dim">10+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vuln Research -->
+            <section class="py-24 border-b border-outline-variant" id="research">
+                <div class="flex items-center gap-4 mb-16">
+                    <span class="font-label-caps text-label-caps text-primary-fixed-dim">01 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">VULNERABILITY RESEARCH</h2>
+                </div>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mb-12">
+                    I’m proud to participate in the Google Bug Hunters Program, which has led the industry in supporting independent security researchers for many years.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+
+                    <!-- Left Column: Featured Card -->
+                    <div class="md:col-span-8">
+                        <div class="bg-surface-container-low tech-border p-8 relative group h-full">
+
+                            <div class="font-label-caps text-label-caps text-primary-fixed-dim mb-4 uppercase tracking-widest">Featured Writeup</div>
+                            <h3 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-6 uppercase tracking-tight">Uploading a youtube video to anyone's channel</h3>
+                            <p class="font-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                                A logic bug in the YouTube Video Builder API allowed video uploads to any channel without owner authorization. Further investigation uncovered a bonus information leak. Read the writeup on Medium or the original report on Bug Hunters.
+                            </p>
+                            <div class="flex items-center gap-6">
+                                <a href="https://kovatch.medium.com/the-youtube-bug-that-allowed-uploads-to-any-channel-3b41c7b7902a" target="_blank">
+                                    <button class="bg-primary-fixed-dim text-on-primary-fixed font-label-caps text-label-caps px-6 py-3 hover:bg-primary-fixed transition-colors flex items-center gap-2">
+                                        READ WRITEUP <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                                    </button>
+                                </a>
+                                <a href="https://bughunters.google.com/reports/vrp/1FtkGdshp" target="_blank">
+                                    <button class="tech-border-primary text-primary-fixed-dim font-label-caps text-label-caps px-6 py-3 hover:bg-primary-fixed-dim/10 transition-colors flex items-center gap-2">
+                                        VIEW REPORT <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                                    </button>
+                                </a>
+                                <div class="font-label-caps text-label-caps text-primary-fixed-dim">BOUNTY: $6,333.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Other Reports -->
+                    <div class="md:col-span-4">
+                        <div class="bg-background tech-border p-6 h-full">
+                            <div class="font-label-caps text-label-caps text-on-surface-variant mb-6 border-b border-outline-variant pb-2 tracking-widest">OTHER REPORTS</div>
+                            <div class="space-y-6">
+                                <div class="group">
+                                    <a href="https://bughunters.google.com/reports/vrp/duW9jeh1g" target="_blank">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <span class="font-code-sm text-primary-fixed-dim">P1</span>
+                                            <span class="font-code-sm text-on-surface-variant">$5,000</span>
+                                        </div>
+                                        <div class="font-body-sm text-on-surface">
+                                            Google Ads API leaks premium user data
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="group">
+                                    <a href="https://bughunters.google.com/reports/vrp/7YteDMtdn" target="_blank">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <span class="font-code-sm text-primary-fixed-dim">P2</span>
+                                            <span class="font-code-sm text-on-surface-variant">$3,133.70</span>
+                                        </div>
+                                        <div class="font-body-sm text-on-surface">
+                                            Google Support leaks confidental chat logs
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="group">
+                                    <a href="https://bughunters.google.com/reports/vrp/7L6CsLGWd" target="_blank">
+                                        <div class="flex justify-between items-start mb-1">
+                                            <span class="font-code-sm text-primary-fixed-dim">P3</span>
+                                            <span class="font-code-sm text-on-surface-variant">$5,000</span>
+                                        </div>
+                                        <div class="font-body-sm text-on-surface">
+                                            Firestore misconfig leaks 1.2 million Google Store discount codes
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="pt-4 border-t border-outline-variant/30">
+                                    <a href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank" class="flex items-center gap-2 font-label-caps text-label-caps text-primary-fixed-dim hover:text-primary-fixed transition-colors uppercase tracking-widest">
+                                        SEE MORE REPORTS <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="py-24 border-b border-outline-variant" id="projects">
+                <div class="flex items-center gap-4 mb-16">
+                    <span class="font-label-caps text-label-caps text-primary-fixed-dim">02 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">PROJECTS</h2>
+                </div>
+                <div class="space-y-12">
+
+                    <!-- Project 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                        <div class="md:col-span-4">
+                            <div class="font-label-caps text-label-caps text-primary-fixed-dim mb-2 tracking-widest">CYBERSECURITY EDUCATION</div>
+                            <h3 class="font-display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">UOregon Teaching SOC</h3>
+                            <a href="https://tsoc.cs.uoregon.edu" target="_blank" class="flex flex-col gap-3">
+                                <button class="tech-border-primary text-primary-fixed-dim font-label-caps text-label-caps px-4 py-2 hover:bg-primary-fixed-dim/10 transition-colors flex items-center justify-between group">
+                                    WEBSITE<span class="material-symbols-outlined text-sm">arrow_outward</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="md:col-span-8 bg-surface-container-low tech-border p-6">
+                            <p class="font-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                                The Teaching Security Operations Center (TSOC) at the University of Oregon immerses students in a real-world, fully operational SOC, where they rotate through critical roles and gain practical expertise in defending against today’s evolving cyber threats. Throughout grad school, I worked with the lead engineer to build out the TSOC’s internal infrastructure. They now enjoy a fully fleshed-out system of industry-standard security platforms and tools.
+                            </p>
+                            <div class="flex gap-4">
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Endpoint Security</span>
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Threat Intelligence</span>
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Vulnerability Management</span>
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Sysadmin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                        <div class="md:col-span-4">
+                            <div class="font-label-caps text-label-caps text-primary-fixed-dim mb-2 tracking-widest">CRYPTOGRAPHY</div>
+                            <h3 class="font-display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">Registration-Based Encryption for Internet Protocols</h3>
+                            <a href="https://www.proquest.com/docview/3370891804" target="_blank" class="flex flex-col gap-3">
+                                <button class="tech-border-primary text-primary-fixed-dim font-label-caps text-label-caps px-4 py-2 hover:bg-primary-fixed-dim/10 transition-colors flex items-center justify-between group">
+                                    READ PAPER<span class="material-symbols-outlined text-sm">arrow_outward</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="md:col-span-8 bg-surface-container-low tech-border p-6">
+                            <p class="font-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                                A new encryption scheme called registration-based encryption (RBE), developed within the last decade, allows for the binding of public keys to identities without certificates. This presents a new avenue for avoiding the traditional pitfalls of public-key infrastructure. My Master's thesis aimed to evaluate whether present RBE constructions could be applied to Internet protocols at scale. This included producing a proof-of-concept encrypted DNS protocol called ReDNS -- the first of its kind.
+                            </p>
+                            <div class="flex gap-4">
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Cryptography</span>
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Protocol Design</span>
+                                <span class="px-3 py-1 bg-surface-container-highest text-code-sm text-on-surface-variant tech-border">Asymptotic Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Me -->
+            <section class="py-24 border-b border-outline-variant" id="contact">
+                <div class="flex items-center gap-4 mb-16">
+                    <span class="font-label-caps text-label-caps text-primary-fixed-dim">03 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">CONTACT</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                    <div class="md:col-span-4">
+                        <p class="font-body-lg text-on-surface-variant leading-relaxed mb-8">
+                            I'm always interested in new research opportunities, collaborations, or just talking shop. Looking forward to hearing from you.
+                        </p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <form class="space-y-6 bg-surface-container-low tech-border p-8" id="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-widest" for="name">Name</label>
+                                    <input class="w-full bg-background border border-outline-variant p-3 text-on-surface focus:border-primary-fixed-dim focus:outline-none transition-colors font-body-sm" id="name" name="name" autocomplete="name" required type="text">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-widest" for="email">Email</label>
+                                    <input class="w-full bg-background border border-outline-variant p-3 text-on-surface focus:border-primary-fixed-dim focus:outline-none transition-colors font-body-sm" id="email" name="email" autocomplete="email" required type="email">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-caps text-label-caps text-primary-fixed-dim uppercase tracking-widest" for="message">Message</label>
+                                <textarea class="w-full bg-background border border-outline-variant p-3 text-on-surface focus:border-primary-fixed-dim focus:outline-none transition-colors font-body-sm resize-none" id="message" name="message" required rows="4"></textarea>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button class="bg-primary-fixed-dim text-on-primary-fixed font-label-caps text-label-caps px-8 py-3 hover:bg-primary-fixed transition-colors flex items-center gap-2" id="submit-btn" type="submit">
+                                    SEND MESSAGE <span class="material-symbols-outlined text-sm">send</span>
+                                </button>
+                                <div class="font-code-sm text-code-sm uppercase tracking-widest" id="form-status"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <script src="static/contact-form.js"></script>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-surface-container-lowest border-t border-outline-variant mt-24">
+            <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gutter max-w-container-max mx-auto">
+                <div class="font-label-caps text-label-caps text-on-surface-variant">© 2026 RYAN KOVATCH. ALL RIGHTS RESERVED.</div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-200" href="https://www.linkedin.com/in/-kovatch/" target="_blank">LinkedIn</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-200" href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank">Bug Hunters</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-200" href="https://kovatch.medium.com" target="_blank">Medium</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary-fixed transition-colors duration-200" href="https://github.com/rkovatch" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
