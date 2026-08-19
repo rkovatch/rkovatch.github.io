@@ -6,7 +6,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     const formData = new FormData(form);
 
     status.textContent = 'SENDING...';
-    status.className = 'font-code-sm text-code-sm uppercase tracking-widest text-on-surface-variant';
+    status.className = 'code-sm uppercase tracking-widest text-on-surface-var';
 
     try {
         const response = await fetch('https://contact-me-35gjb474wq-uw.a.run.app/', {
@@ -17,17 +17,17 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         response.json().then((resp_obj) => {
             if (resp_obj.success) {
                 status.textContent = 'MESSAGE SENT';
-                status.className = 'font-code-sm text-code-sm uppercase tracking-widest text-primary-fixed-dim';
+                status.className = 'code-sm uppercase tracking-widest text-primary-dim';
                 btn.disabled = true;
                 btn.classList.add('opacity-50', 'cursor-not-allowed');
             } else {
                 // if success is false then error is provided
                 status.textContent = 'ERROR: ' + resp_obj.error.toUpperCase();
-                status.className = 'font-code-sm text-code-sm uppercase tracking-widest text-red-400';
+                status.className = 'code-sm uppercase tracking-widest text-red-400';
             }
         });
     } catch (err) {
         status.textContent = 'ERROR SENDING REQUEST';
-        status.className = 'font-code-sm text-code-sm uppercase tracking-widest text-red-400';
+        status.className = 'code-sm uppercase tracking-widest text-red-400';
     }
 });
