@@ -13,18 +13,18 @@
         <link href="static/styles.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     </head>
-    <body class="bg-background text-on-background body-lg min-h-screen antialiased selection:bg-primary-dim selection:text-on-primary">
+    <body class="bg-background text-on-background font-body-lg text-body-lg min-h-screen antialiased selection:bg-primary-dim selection:text-on-primary">
         <!-- Nav Bar -->
-        <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-var">
+        <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-alt">
             <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
-                <a class="label-caps text-primary-dim tracking-[0.2em]" href="#hero">RYAN KOVATCH</a>
+                <a class="font-label-caps text-label-caps text-primary-dim tracking-[0.2em]" href="#hero">RYAN KOVATCH</a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a class="text-on-surface-var label-caps hover:text-primary transition-colors duration-200 uppercase" href="#research">Research</a>
-                    <a class="text-on-surface-var label-caps hover:text-primary transition-colors duration-200 uppercase" href="#projects">Projects</a>
-                    <a class="text-on-surface-var label-caps hover:text-primary transition-colors duration-200 uppercase" href="#contact">Contact</a>
+                    <a class="text-on-surface-alt font-label-caps text-label-caps hover:text-primary transition-colors duration-200 uppercase" href="#research">Research</a>
+                    <a class="text-on-surface-alt font-label-caps text-label-caps hover:text-primary transition-colors duration-200 uppercase" href="#projects">Projects</a>
+                    <a class="text-on-surface-alt font-label-caps text-label-caps hover:text-primary transition-colors duration-200 uppercase" href="#contact">Contact</a>
                 </div>
                 <a href="assets/Ryan%20Kovatch%20Resume.pdf">
-                    <button class="bg-primary-dim text-on-primary label-caps px-4 py-2 hover:bg-primary transition-colors">
+                    <button class="bg-primary-dim text-on-primary font-label-caps text-label-caps px-4 py-2 hover:bg-primary transition-colors">
                         RESUME.PDF
                     </button>
                 </a>
@@ -33,14 +33,14 @@
 
         <main class="pt-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative grid-bg">
             <!-- Hero Section -->
-            <section class="py-12 relative min-h-[40vh] flex flex-col justify-center border-b border-outline-var" id="hero">
+            <section class="py-12 relative min-h-[40vh] flex flex-col justify-center border-b border-outline-alt" id="hero">
                 <div class="relative z-10 max-w-container-max w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                     <div class="md:col-span-8">
-                        <div class="code-sm opacity-30 text-primary-dim mb-4 tracking-widest">[HERO_SECTION]</div>
-                        <h1 class="display-lg text-on-surface mb-4 uppercase tracking-wider">RYAN KOVATCH</h1>
-                        <p class="headline-md text-on-surface-var mb-6">Web Application Security Specialist</p>
+                        <div class="font-code-sm text-code-sm opacity-30 text-primary-dim mb-4 tracking-widest">[HERO_SECTION]</div>
+                        <h1 class="font-display-lg text-display-lg text-on-surface mb-4 uppercase tracking-wider">RYAN KOVATCH</h1>
+                        <p class="font-headline-md text-headline-md text-on-surface-alt mb-6">Web Application Security Specialist</p>
                         <div class="max-w-2xl bg-surface-low tech-border p-4 backdrop-blur-sm">
-                            <p class="body-lg text-on-surface-var leading-relaxed">
+                            <p class="font-body-lg text-body-lg text-on-surface-alt leading-relaxed">
                                 Hi! I'm a cybersecurity specialist with a focus on web application and API security. I recently graduated with an MS in Computer Science from the University of Oregon, where I did cryptographic protocol design and research. My accomplishments in bug bounty helped pay for my education.
                             </p>
                         </div>
@@ -51,9 +51,9 @@
                                 <span class="material-symbols-outlined">public</span>
                             </div>
                             <div>
-                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim code-sm">[METRIC_01]</div>
-                                <h3 class="label-caps text-on-surface-var mb-1 uppercase tracking-widest">Google VRP</h3>
-                                <p class="headline-md text-2xl text-primary-dim">TOP 10%</p>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim font-code-sm text-code-sm">[METRIC_01]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-alt mb-1 uppercase tracking-widest">Google VRP</h3>
+                                <p class="font-headline-md text-2xl text-primary-dim">TOP 10%</p>
                             </div>
                         </div>
                         <div class="bg-background backdrop-blur-sm tech-border p-3 relative flex items-center gap-4">
@@ -61,9 +61,9 @@
                                 <span class="material-symbols-outlined">payments</span>
                             </div>
                             <div>
-                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim code-sm">[METRIC_02]</div>
-                                <h3 class="label-caps text-on-surface-var mb-1 uppercase tracking-widest">Awards</h3>
-                                <p class="headline-md text-2xl text-primary-dim">$30K+</p>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim font-code-sm text-code-sm">[METRIC_02]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-alt mb-1 uppercase tracking-widest">Awards</h3>
+                                <p class="font-headline-md text-2xl text-primary-dim">$30K+</p>
                             </div>
                         </div>
                         <div class="bg-background backdrop-blur-sm tech-border p-3 relative flex items-center gap-4">
@@ -71,9 +71,9 @@
                                 <span class="material-symbols-outlined">bug_report</span>
                             </div>
                             <div>
-                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim code-sm">[METRIC_03]</div>
-                                <h3 class="label-caps text-on-surface-var mb-1 uppercase tracking-widest">Critical Vulns</h3>
-                                <p class="headline-md text-2xl text-primary-dim">10+</p>
+                                <div class="absolute top-0 right-0 p-2 opacity-30 text-primary-dim font-code-sm text-code-sm">[METRIC_03]</div>
+                                <h3 class="font-label-caps text-label-caps text-on-surface-alt mb-1 uppercase tracking-widest">Critical Vulns</h3>
+                                <p class="font-headline-md text-2xl text-primary-dim">10+</p>
                             </div>
                         </div>
                     </div>
@@ -81,12 +81,12 @@
             </section>
 
             <!-- Vuln Research -->
-            <section class="py-24 border-b border-outline-var" id="research">
+            <section class="py-24 border-b border-outline-alt" id="research">
                 <div class="flex items-center gap-4 mb-16">
-                    <span class="label-caps text-primary-dim">01 //</span>
-                    <h2 class="headline-md text-on-surface uppercase tracking-wider">VULNERABILITY RESEARCH</h2>
+                    <span class="font-label-caps text-label-caps text-primary-dim">01 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">VULNERABILITY RESEARCH</h2>
                 </div>
-                <p class="body-lg text-on-surface-var leading-relaxed max-w-2xl mb-12">
+                <p class="font-body-lg text-body-lg text-on-surface-alt leading-relaxed max-w-2xl mb-12">
                     I’m proud to participate in the Google Bug Hunters Program, which has led the industry in supporting independent security researchers for many years.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
@@ -95,23 +95,23 @@
                     <div class="md:col-span-8">
                         <div class="bg-surface-low tech-border p-8 relative h-full">
 
-                            <div class="label-caps text-primary-dim mb-4 uppercase tracking-widest">Featured Writeup</div>
-                            <h3 class="display-lg text-2xl md:text-4xl text-on-surface mb-6 uppercase tracking-tight">Uploading a youtube video to anyone's channel</h3>
-                            <p class="body-lg text-on-surface-var mb-8 leading-relaxed">
+                            <div class="font-label-caps text-label-caps text-primary-dim mb-4 uppercase tracking-widest">Featured Writeup</div>
+                            <h3 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-6 uppercase tracking-tight">Uploading a youtube video to anyone's channel</h3>
+                            <p class="font-body-lg text-on-surface-alt mb-8 leading-relaxed">
                                 A logic bug in the YouTube Video Builder API allowed video uploads to any channel without owner authorization. Further investigation uncovered a bonus information leak. Read the writeup on Medium or the original report on Bug Hunters.
                             </p>
                             <div class="flex items-center gap-6">
                                 <a href="https://kovatch.medium.com/the-youtube-bug-that-allowed-uploads-to-any-channel-3b41c7b7902a" target="_blank">
-                                    <button class="bg-primary-dim text-on-primary label-caps px-6 py-3 hover:bg-primary transition-colors flex items-center gap-2">
+                                    <button class="bg-primary-dim text-on-primary font-label-caps text-label-caps px-6 py-3 hover:bg-primary transition-colors flex items-center gap-2">
                                         READ WRITEUP <span class="material-symbols-outlined text-sm">arrow_outward</span>
                                     </button>
                                 </a>
                                 <a href="https://bughunters.google.com/reports/vrp/1FtkGdshp" target="_blank">
-                                    <button class="tech-border-primary text-primary-dim label-caps px-6 py-3 hover:bg-primary-dim/10 transition-colors flex items-center gap-2">
+                                    <button class="tech-border-primary text-primary-dim font-label-caps text-label-caps px-6 py-3 hover:bg-primary-dim/10 transition-colors flex items-center gap-2">
                                         VIEW REPORT <span class="material-symbols-outlined text-sm">arrow_outward</span>
                                     </button>
                                 </a>
-                                <div class="label-caps text-primary-dim">BOUNTY: $6,333.00</div>
+                                <div class="font-label-caps text-label-caps text-primary-dim">BOUNTY: $6,333.00</div>
                             </div>
                         </div>
                     </div>
@@ -119,40 +119,40 @@
                     <!-- Right Column: Other Reports -->
                     <div class="md:col-span-4">
                         <div class="bg-background tech-border p-6 h-full">
-                            <div class="label-caps text-on-surface-var mb-6 border-b border-outline-var pb-2 tracking-widest">OTHER REPORTS</div>
+                            <div class="font-label-caps text-label-caps text-on-surface-alt mb-6 border-b border-outline-alt pb-2 tracking-widest">OTHER REPORTS</div>
                             <div class="space-y-6">
                                 <a class="block" href="https://bughunters.google.com/reports/vrp/duW9jeh1g" target="_blank">
                                     <div class="flex justify-between items-start mb-1">
-                                        <span class="code-sm text-primary-dim">P1</span>
-                                        <span class="code-sm text-on-surface-var">$5,000</span>
+                                        <span class="font-code-sm text-code-sm text-primary-dim">P1</span>
+                                        <span class="font-code-sm text-code-sm text-on-surface-alt">$5,000</span>
                                     </div>
-                                    <div class="body-sm text-on-surface">
+                                    <div class="font-body-sm text-body-sm text-on-surface">
                                         Google Ads API leaks premium user data
                                     </div>
                                 </a>
 
                                 <a class="block" href="https://bughunters.google.com/reports/vrp/7YteDMtdn" target="_blank">
                                     <div class="flex justify-between items-start mb-1">
-                                        <span class="code-sm text-primary-dim">P2</span>
-                                        <span class="code-sm text-on-surface-var">$3,133.70</span>
+                                        <span class="font-code-sm text-code-sm text-primary-dim">P2</span>
+                                        <span class="font-code-sm text-code-sm text-on-surface-alt">$3,133.70</span>
                                     </div>
-                                    <div class="body-sm text-on-surface">
+                                    <div class="font-body-sm text-body-sm text-on-surface">
                                         Google Support leaks confidental chat logs
                                     </div>
                                 </a>
 
                                 <a class="block" href="https://bughunters.google.com/reports/vrp/7L6CsLGWd" target="_blank">
                                     <div class="flex justify-between items-start mb-1">
-                                        <span class="code-sm text-primary-dim">P3</span>
-                                        <span class="code-sm text-on-surface-var">$5,000</span>
+                                        <span class="font-code-sm text-code-sm text-primary-dim">P3</span>
+                                        <span class="font-code-sm text-code-sm text-on-surface-alt">$5,000</span>
                                     </div>
-                                    <div class="body-sm text-on-surface">
+                                    <div class="font-body-sm text-body-sm text-on-surface">
                                         Firestore misconfig leaks 1.2 million Google Store discount codes
                                     </div>
                                 </a>
 
-                                <div class="pt-4 border-t border-outline-var/30">
-                                    <a href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank" class="flex items-center gap-2 label-caps text-primary-dim hover:text-primary transition-colors uppercase tracking-widest">
+                                <div class="pt-4 border-t border-outline-alt/30">
+                                    <a href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank" class="flex items-center gap-2 font-label-caps text-label-caps text-primary-dim hover:text-primary transition-colors uppercase tracking-widest">
                                         SEE MORE REPORTS <span class="material-symbols-outlined text-sm">arrow_outward</span>
                                     </a>
                                 </div>
@@ -163,33 +163,33 @@
             </section>
 
             <!-- Projects -->
-            <section class="py-24 border-b border-outline-var" id="projects">
+            <section class="py-24 border-b border-outline-alt" id="projects">
                 <div class="flex items-center gap-4 mb-16">
-                    <span class="label-caps text-primary-dim">02 //</span>
-                    <h2 class="headline-md text-on-surface uppercase tracking-wider">PROJECTS</h2>
+                    <span class="font-label-caps text-label-caps text-primary-dim">02 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">PROJECTS</h2>
                 </div>
                 <div class="space-y-12">
 
                     <!-- Project 1 -->
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                         <div class="md:col-span-4">
-                            <div class="label-caps text-primary-dim mb-2 tracking-widest">CYBERSECURITY EDUCATION</div>
-                            <h3 class="display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">UOregon Teaching SOC</h3>
+                            <div class="font-label-caps text-label-caps text-primary-dim mb-2 tracking-widest">CYBERSECURITY EDUCATION</div>
+                            <h3 class="font-display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">UOregon Teaching SOC</h3>
                             <a href="https://tsoc.cs.uoregon.edu" target="_blank" class="flex flex-col gap-3">
-                                <button class="tech-border-primary text-primary-dim label-caps px-4 py-2 hover:bg-primary-dim/10 transition-colors flex items-center justify-between">
+                                <button class="tech-border-primary text-primary-dim font-label-caps text-label-caps px-4 py-2 hover:bg-primary-dim/10 transition-colors flex items-center justify-between">
                                     WEBSITE<span class="material-symbols-outlined text-sm">arrow_outward</span>
                                 </button>
                             </a>
                         </div>
                         <div class="md:col-span-8 bg-surface-low tech-border p-6">
-                            <p class="body-lg text-on-surface-var mb-6 leading-relaxed">
+                            <p class="font-body-lg text-body-lg text-on-surface-alt mb-6 leading-relaxed">
                                 The Teaching Security Operations Center (TSOC) at the University of Oregon immerses students in a real-world, fully operational SOC, where they rotate through critical roles and gain practical expertise in defending against today’s evolving cyber threats. Throughout grad school, I worked with the lead engineer to build out the TSOC’s internal infrastructure. They now enjoy a fully fleshed-out system of industry-standard security platforms and tools.
                             </p>
                             <div class="flex gap-4">
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Endpoint Security</span>
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Threat Intelligence</span>
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Vulnerability Management</span>
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Sysadmin</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Endpoint Security</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Threat Intelligence</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Vulnerability Management</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Sysadmin</span>
                             </div>
                         </div>
                     </div>
@@ -197,22 +197,22 @@
                     <!-- Project 2 -->
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                         <div class="md:col-span-4">
-                            <div class="label-caps text-primary-dim mb-2 tracking-widest">CRYPTOGRAPHY</div>
-                            <h3 class="display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">Registration-Based Encryption for Internet Protocols</h3>
+                            <div class="font-label-caps text-label-caps text-primary-dim mb-2 tracking-widest">CRYPTOGRAPHY</div>
+                            <h3 class="font-display-lg text-2xl text-on-surface uppercase tracking-tight mb-4">Registration-Based Encryption for Internet Protocols</h3>
                             <a href="https://www.proquest.com/docview/3370891804" target="_blank" class="flex flex-col gap-3">
-                                <button class="tech-border-primary text-primary-dim label-caps px-4 py-2 hover:bg-primary-dim/10 transition-colors flex items-center justify-between">
+                                <button class="tech-border-primary text-primary-dim font-label-caps text-label-caps px-4 py-2 hover:bg-primary-dim/10 transition-colors flex items-center justify-between">
                                     READ PAPER<span class="material-symbols-outlined text-sm">arrow_outward</span>
                                 </button>
                             </a>
                         </div>
                         <div class="md:col-span-8 bg-surface-low tech-border p-6">
-                            <p class="body-lg text-on-surface-var mb-6 leading-relaxed">
+                            <p class="font-body-lg text-body-lg text-on-surface-alt mb-6 leading-relaxed">
                                 A new encryption scheme called registration-based encryption (RBE), developed within the last decade, allows for the binding of public keys to identities without certificates. This presents a new avenue for avoiding the traditional pitfalls of public-key infrastructure. My Master's thesis aimed to evaluate whether present RBE constructions could be applied to Internet protocols at scale. This included producing a proof-of-concept encrypted DNS protocol called ReDNS -- the first of its kind.
                             </p>
                             <div class="flex gap-4">
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Cryptography</span>
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Protocol Design</span>
-                                <span class="px-3 py-1 bg-surface-highest code-sm text-on-surface-var tech-border">Asymptotic Analysis</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Cryptography</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Protocol Design</span>
+                                <span class="px-3 py-1 bg-surface-highest font-code-sm text-code-sm text-on-surface-alt tech-border">Asymptotic Analysis</span>
                             </div>
                         </div>
                     </div>
@@ -220,14 +220,14 @@
             </section>
 
             <!-- Contact Me -->
-            <section class="py-24 border-b border-outline-var" id="contact">
+            <section class="py-24 border-b border-outline-alt" id="contact">
                 <div class="flex items-center gap-4 mb-16">
-                    <span class="label-caps text-primary-dim">03 //</span>
-                    <h2 class="headline-md text-on-surface uppercase tracking-wider">CONTACT</h2>
+                    <span class="font-label-caps text-label-caps text-primary-dim">03 //</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider">CONTACT</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
                     <div class="md:col-span-4">
-                        <p class="body-lg text-on-surface-var leading-relaxed mb-8">
+                        <p class="font-body-lg text-body-lg text-on-surface-alt leading-relaxed mb-8">
                             I'm always interested in new research opportunities, collaborations, or just talking shop. Looking forward to hearing from you.
                         </p>
                     </div>
@@ -235,23 +235,23 @@
                         <form class="space-y-6 bg-surface-low tech-border p-8" id="contact-form">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="label-caps text-primary-dim uppercase tracking-widest" for="name">Name</label>
-                                    <input class="w-full bg-background border border-outline-var p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors body-sm" id="name" name="name" autocomplete="name" required type="text">
+                                    <label class="font-label-caps text-label-caps text-primary-dim uppercase tracking-widest" for="name">Name</label>
+                                    <input class="w-full bg-background border border-outline-alt p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors font-body-sm text-body-sm" id="name" name="name" autocomplete="name" required type="text">
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="label-caps text-primary-dim uppercase tracking-widest" for="email">Email</label>
-                                    <input class="w-full bg-background border border-outline-var p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors body-sm" id="email" name="email" autocomplete="email" required type="email">
+                                    <label class="font-label-caps text-label-caps text-primary-dim uppercase tracking-widest" for="email">Email</label>
+                                    <input class="w-full bg-background border border-outline-alt p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors font-body-sm text-body-sm" id="email" name="email" autocomplete="email" required type="email">
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="label-caps text-primary-dim uppercase tracking-widest" for="message">Message</label>
-                                <textarea class="w-full bg-background border border-outline-var p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors body-sm resize-none" id="message" name="message" required rows="4"></textarea>
+                                <label class="font-label-caps text-label-caps text-primary-dim uppercase tracking-widest" for="message">Message</label>
+                                <textarea class="w-full bg-background border border-outline-alt p-3 text-on-surface focus:border-primary-dim focus:outline-none transition-colors font-body-sm text-body-sm resize-none" id="message" name="message" required rows="4"></textarea>
                             </div>
                             <div class="flex items-center gap-4">
-                                <button class="bg-primary-dim text-on-primary label-caps px-8 py-3 hover:bg-primary transition-colors flex items-center gap-2" id="submit-btn" type="submit">
+                                <button class="bg-primary-dim text-on-primary font-label-caps text-label-caps px-8 py-3 hover:bg-primary transition-colors flex items-center gap-2" id="submit-btn" type="submit">
                                     SEND MESSAGE <span class="material-symbols-outlined text-sm">send</span>
                                 </button>
-                                <div class="code-sm uppercase tracking-widest" id="form-status"></div>
+                                <div class="font-code-sm text-code-sm uppercase tracking-widest" id="form-status"></div>
                             </div>
                         </form>
                     </div>
@@ -261,14 +261,14 @@
         </main>
 
         <!-- Footer -->
-        <footer class="bg-surface-lowest border-t border-outline-var mt-24">
+        <footer class="bg-surface-lowest border-t border-outline-alt mt-24">
             <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gutter max-w-container-max mx-auto">
-                <div class="label-caps text-on-surface-var">© 2026 RYAN KOVATCH. ALL RIGHTS RESERVED.</div>
+                <div class="font-label-caps text-label-caps text-on-surface-alt">© 2026 RYAN KOVATCH. ALL RIGHTS RESERVED.</div>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a class="label-caps text-on-surface-var hover:text-primary transition-colors duration-200" href="https://www.linkedin.com/in/-kovatch/" target="_blank">LinkedIn</a>
-                    <a class="label-caps text-on-surface-var hover:text-primary transition-colors duration-200" href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank">Bug Hunters</a>
-                    <a class="label-caps text-on-surface-var hover:text-primary transition-colors duration-200" href="https://kovatch.medium.com" target="_blank">Medium</a>
-                    <a class="label-caps text-on-surface-var hover:text-primary transition-colors duration-200" href="https://github.com/rkovatch" target="_blank">GitHub</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-alt hover:text-primary transition-colors duration-200" href="https://www.linkedin.com/in/-kovatch/" target="_blank">LinkedIn</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-alt hover:text-primary transition-colors duration-200" href="https://bughunters.google.com/profile/817aa4f9-aa5d-4adf-a772-59100c51b38b" target="_blank">Bug Hunters</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-alt hover:text-primary transition-colors duration-200" href="https://kovatch.medium.com" target="_blank">Medium</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-alt hover:text-primary transition-colors duration-200" href="https://github.com/rkovatch" target="_blank">GitHub</a>
                 </div>
             </div>
         </footer>

@@ -9,8 +9,8 @@ tailwind.config = {
                 "primary-dim": "#00dbe9",
                 "on-primary": "#002022",
                 "on-surface": "#e5e2e1",
-                "on-surface-var": "#b9cacb",
-                "outline-var": "#3b494b",
+                "on-surface-alt": "#b9cacb",
+                "outline-alt": "#3b494b",
                 "surface-highest": "#353534",
                 "surface-low": "#1c1b1b",
                 "surface-lowest": "#0e0e0e"
